@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Little Note for You ✨</title>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: linear-gradient(135deg, #fff5f5 0%, #fed7aa 50%, #fbcfe8 100%);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Poppins', sans-serif;
+      color: #4a4a4a;
+      padding: 20px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(10px);
+      border-radius: 24px;
+      padding: 40px 30px;
+      max-width: 450px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .date-badge {
+      display: inline-block;
+      background: #ffe4e6;
+      color: #e11d48;
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 6px 16px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+      letter-spacing: 0.5px;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      color: #1f2937;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+
+    .subtitle {
+      font-size: 0.95rem;
+      color: #6b7280;
+      margin-bottom: 28px;
+      line-height: 1.6;
+    }
+
+    .praises {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-bottom: 30px;
+    }
+
+    .praise-item {
+      background: #ffffff;
+      padding: 14px 18px;
+      border-radius: 16px;
+      font-size: 0.95rem;
+      color: #374151;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      transition: transform 0.2s ease;
+    }
+
+    .praise-item:hover {
+      transform: translateY(-2px);
+    }
+
+    .praise-item .icon {
+      font-size: 1.3rem;
+    }
+
+    .special-note {
+      font-family: 'Caveat', cursive;
+      font-size: 1.6rem;
+      color: #e11d48;
+      line-height: 1.4;
+      margin-top: 10px;
+      padding-top: 20px;
+      border-top: 1px dashed #f3246a33;
+    }
+
+    /* Decorative Floating Hearts */
+    .heart {
+      position: absolute;
+      color: #f43f5e;
+      opacity: 0.15;
+      animation: float 6s infinite ease-in-out;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-15px) rotate(10deg); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="date-badge">10.10 • Perfect Day ✨</div>
+    
+    <h1>Hi Zahraa</h1>
+    <p class="subtitle">Kebetulan tadii aku lagi gabut, jdi aku buatinn inii...</p>
+
+    <div class="praises">
+      <div class="praise-item">
+        <span class="icon">✨</span>
+        <span>Kamu tu cantikk yaa kaya tanggal sekarangg, 10/10 </span>
+      </div>
+      <div class="praise-item">
+        <span class="icon">🌷</span>
+        <span>Semangattt teruss yaa, kann mau jadii dokterrr</span>
+      </div>
+      <div class="praise-item">
+        <span class="icon">☕</span>
+        <span>Walauu lagi sakitt, tapii tetep Semangattt eskull sekolahh ama less, KERENN</span>
+      </div>
+    </div>
+
+    <div class="special-note">
+      SEMOGAA SEGALA DOA, CITA CITA DAN HARAPAN KAMU TERCAPAI YAAA
+    </div>
+  </div>
+        
+</body>
+</html>
